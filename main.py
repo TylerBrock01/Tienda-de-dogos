@@ -1,8 +1,6 @@
+from bucle import bucles
 
-# the below code fragment can be found in:
-from bienvenida import home
+inicio = bucles()
 
-inicio = home()
-
-inicio.menu()
+inicio.bucle_menu()
 #fin de codigo

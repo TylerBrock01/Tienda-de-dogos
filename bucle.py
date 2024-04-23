@@ -1,7 +1,6 @@
 from bienvenida import home
-
-while True:
-    inicio = home()
-    inicio.menu()
+inicio = home()
+    
 def bucle_menu(self):
-    #fin de la funcion
+    while True:
+        inicio.funcion_menu()
