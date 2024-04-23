@@ -1,5 +1,5 @@
 # Tienda-de-dogos
-Requisitos a desarrollar:
+Requisitos a desarrollar de la app:
 
 las funciones de esta aplicacion para el cliente son:
 -Cliente: podra crear, leer, actualizar y eliminar pedidos.
