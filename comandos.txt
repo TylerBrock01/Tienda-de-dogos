@@ -1,0 +1,5 @@
+git pull origin mai <-- se utiliza para actualizar el repositiorio main
+git status <-- se utiliza para para ver si hay cambios nuevos
+git add . <-- preparas archivo para subirlo al control de versiones
+git commit -m "actualizacion del repositiorio" <-- se sube el archivo al control de versiones
+git push <-- se sube el archivo al repositiorio
