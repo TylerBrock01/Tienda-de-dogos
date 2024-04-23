@@ -1,6 +1,4 @@
-from bucle import bucles
+import bucle
 
-inicio = bucles()
-
-inicio.bucle_menu()
+bucle.bucle_menu()
 #fin de codigo

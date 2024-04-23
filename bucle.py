@@ -1,6 +1,4 @@
-from bienvenida import home
-inicio = home()
-    
+import home
 def bucle_menu(self):
     while True:
-        inicio.funcion_menu()
+        home.funcion_menu()
