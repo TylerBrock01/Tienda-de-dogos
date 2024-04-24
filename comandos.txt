@@ -7,3 +7,10 @@ git push <-- se sube el archivo al repositiorio
 git branch <-- mira las ramas que existen
 git branch nombre_de_la_rama <--- crea nueva branch
 git checkout nombre_de_la_rama <-- cambia de rama o version
+
+para hacer merge:
+
+git pull
+git merge nombre_de_la_rama
+git commit -am "texto" <- agrega y hace commit
+git push origin direccion_de_la_rama
