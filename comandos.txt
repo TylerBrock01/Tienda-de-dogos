@@ -3,3 +3,7 @@ git status <-- se utiliza para para ver si hay cambios nuevos
 git add . <-- preparas archivo para subirlo al control de versiones
 git commit -m "actualizacion del repositiorio" <-- se sube el archivo al control de versiones
 git push <-- se sube el archivo al repositiorio
+
+git branch <-- mira las ramas que existen
+git branch nombre_de_la_rama <--- crea nueva branch
+git checkout nombre_de_la_rama <-- cambia de rama o version
