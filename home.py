@@ -1,7 +1,11 @@
 #invocar menu
 def funcion_home():
-    respuesta = int(input(" \n\n#########################\nBienvenido a dogoshit\nle mostramos el menu\n [1] Ordenar\n [2] Modificar\n [3] verificar pedido\n [0] salir\n_______________________________\nIngrese una opcion:"))
-    funcion_agregar(respuesta)
+    try:
+        respuesta = int(input("#########################\nBienvenido a dogoshit\nle mostramos el menu\n [1] Ordenar\n [2] Modificar\n [3] verificar pedido\n [0] salir\n_______________________________\nIngrese una opcion:"))
+        funcion_agregar(respuesta)
+    except ValueError:
+        print("\n\nno es una opcion!!")
+        funcion_home()
 
 def funcion_agregar(respuesta):
     if respuesta == 1:
