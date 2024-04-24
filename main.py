@@ -1,4 +1,3 @@
-import bucle
+import home
 
-bucle.bucle_menu()
-#fin de codigo
+home.funcion_home()
