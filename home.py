@@ -4,17 +4,13 @@ def funcion_home():
     funcion_agregar(respuesta)
 
 def funcion_agregar(respuesta):
-    try:
-        if respuesta == 1:
-            import comida
-            comida.mostrar_menu()
-        elif respuesta == 2:
-            print("elegiste la opcion 2")
-        else:
-            print("#########################\n\n")
-            print("opcion no valida")
-            funcion_home()
-    except ValueError:
+    if respuesta == 1:
+        import comida
+        comida.mostrar_menu()
+    elif respuesta == 2:
+        print("elegiste la opcion 2")
+            
+    else:
         print("#########################\n\n")
         print("opcion no valida")
         funcion_home()
