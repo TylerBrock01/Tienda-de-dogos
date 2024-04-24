@@ -14,14 +14,36 @@ def mostrar_menu():
         
 def elegir_ingrediente():
     try:
-        ingredientes = []
         respuesta = int(input("#################\n\Ingredientes\n[1] mayonesa\n[2] catsup\n[3] cebolla cocida\n[4] cebolla cruda\n[5] salsa(chile)\n[6] con todos los ingredientes\n[7] sin ingredientes\n\n[0] Cancelar operacion"))
         if respuesta == 0:
             home.funcion_home()
         elif respuesta >= 1 and respuesta <=7:
-            # agregar_ingrediente(respuesta)
+            agregar_ingrediente(respuesta)
             # mostrar_ingrediente()
             elegir_ingrediente()
     except ValueError:
         elegir_ingrediente()
- 
+
+def agregar_ingrediente(respuesta):
+    ingredientes = []    
+    try:
+        if respuesta == 1:
+            ingredientes.append("mayonesa")
+        elif respuesta == 2:
+            ingredientes.append("catsup")
+        elif respuesta == 3:
+            ingredientes.append("cebolla cocida")
+        elif respuesta == 4:
+            ingredientes.append("cebolla cruda")
+        elif respuesta == 5:
+            ingredientes.append("salsa(chile)")
+        elif respuesta == 6:
+            ingredientes.append("mayonesa")
+            ingredientes.append("catsup")
+            ingredientes.append("cebolla cocida")
+            ingredientes.append("cebolla cruda")
+            ingredientes.append("salsa(chile)")
+        elif respuesta == 7:
+            pass
+    except ValueError:
+        print("esto no deberia ocurrir")
