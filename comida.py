@@ -20,7 +20,7 @@ def elegir_ingrediente():
         if respuesta == 0:
             home.funcion_home()
         elif respuesta >= 1 and respuesta <=7:
-            agregar_ingrediente(respuesta)
+            agregar_ingrediente(respuesta)#evans funcion que debe utilizar
             # mostrar_ingrediente()
             elegir_ingrediente()
         else:
@@ -29,11 +29,15 @@ def elegir_ingrediente():
     except ValueError:
         elegir_ingrediente()
 
-def agregar_ingrediente(respuesta):
+def agregar_ingrediente(respuesta):#evans task
     ingredientes = []    
     try:
+        #bloque de ejemplo
         if respuesta == 1:
+            print("\nAgregaste mayonesa")
             ingredientes.append("mayonesa")
+            elegir_ingrediente()
+        #bloques que debe usar el evans v
         elif respuesta == 2:
             ingredientes.append("catsup")
         elif respuesta == 3:
