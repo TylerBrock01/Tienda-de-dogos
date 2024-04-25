@@ -5,9 +5,11 @@ def mostrar_menu():
         respuesta = int(input("#################\n\nmenu de hot dogs:\n[1]\tnormal\n\n[0] CANCELAR pedido\n\nIngrese su opcion:"))
         if respuesta == 0:
             home.funcion_home()
-        elif respuesta >= 1:
+        elif respuesta == 1:
             elegir_ingrediente()
-            
+        else:
+            print("\n\nIngrese una opcion valida en [mostrar_menu]")
+            mostrar_menu()
     except ValueError:
         print("\n\nIngrese una opcion valida en [mostrar_menu]")
         mostrar_menu()
@@ -20,6 +22,9 @@ def elegir_ingrediente():
         elif respuesta >= 1 and respuesta <=7:
             agregar_ingrediente(respuesta)
             # mostrar_ingrediente()
+            elegir_ingrediente()
+        else:
+            print("\n\nIngrese una opcion valida en [elegir_ingrediente]")
             elegir_ingrediente()
     except ValueError:
         elegir_ingrediente()
@@ -47,3 +52,5 @@ def agregar_ingrediente(respuesta):
             pass
     except ValueError:
         print("esto no deberia ocurrir")
+
+mostrar_menu()
